@@ -1,0 +1,19 @@
+﻿{% extends "app/base_generic.html" %}
+{% block content %}
+<div class="page-header">
+    <h1><a href="/">eMenu</a></h1>
+</div>
+<div class="content">
+    {% if latest_menu_list %}
+
+    <ol>
+        {% for menu in latest_menu_list %}
+        <h2><li><a href="{% url 'app:detail' menu.id %}">{{ menu.title}}</a></li></h2>
+
+        {% endfor %}
+    </ol>
+    {% else %}
+    <p>No menus are available.</p>
+    {% endif %}
+</div>
+{% endblock %}
