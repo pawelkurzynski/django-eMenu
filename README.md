@@ -1,8 +1,7 @@
-=====
-eManu
+eMenu
 =====
 
-eManu is a simple Django app to conduct Web-based restaurant menu. 
+eMenu is a simple Django app to conduct Web-based restaurant menu. 
 
 Quick start
 -----------
